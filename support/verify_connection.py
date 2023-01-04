@@ -6,7 +6,7 @@ from ssl import SSLContext
 
 import urllib3
 
-PORT = '5000'
+PORT = '8080'
 url = f'https://localhost:{PORT}/v1/api/one/user'
 cacert_filename = 'cacert.pem'
 cert_filename = 'cert.pem'

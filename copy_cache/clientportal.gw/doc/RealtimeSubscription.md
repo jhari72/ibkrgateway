@@ -29,7 +29,7 @@ The portfolio positions end-point returns a conid for each position with the sec
 The *md* subscription also accepts special options that affect the subscription and can be passed as JSON Object. Those options are:
 
   
-- **tempo**: A number in milliseconds. This number affects the tick update frequency. Without tempo set, the backend will push all tick updates to the client. If tempo is set to 5000 (5 seconds), the backend will keep an internal map of key, values to store all tick updates, only after the 5 seconds and will push the map to the client those 5 seconds have elapsed.
+- **tempo**: A number in milliseconds. This number affects the tick update frequency. Without tempo set, the backend will push all tick updates to the client. If tempo is set to 8080 (5 seconds), the backend will keep an internal map of key, values to store all tick updates, only after the 5 seconds and will push the map to the client those 5 seconds have elapsed.
 - **snapshot**: Boolean, true or false. When true, the backend will send a snapshot of all information currently available for the conid.
 - **fields**: A comma separated list of fields as described in the /marketdata/snapshot end-point.
 

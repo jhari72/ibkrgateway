@@ -70,7 +70,7 @@ pip install ibeam
 #### Docker
 
 ```posh
-docker run --env IBEAM_ACCOUNT=your_account123 --env IBEAM_PASSWORD=your_password123 -p 5000:5000 voyz/ibeam
+docker run --env IBEAM_ACCOUNT=your_account123 --env IBEAM_PASSWORD=your_password123 -p 8080:8080 voyz/ibeam
 ```
 
 #### docker-compose:
@@ -87,7 +87,7 @@ services:
     env_file:
       - env.list
     ports:
-      - 5000:5000
+      - 8080:8080
       - 5001:5001
     network_mode: bridge # Required due to clientportal.gw IP whitelist
     restart: 'no' # Prevents IBEAM_MAX_FAILED_AUTH from being exceeded
@@ -116,7 +116,7 @@ python ibeam_starter.py
 Once started, verify the Gateway is running by calling:
 
 ```posh
-curl -X GET "https://localhost:5000/v1/api/one/user" -k
+curl -X GET "https://localhost:8080/v1/api/one/user" -k
 ```
 
 Read more in [Installation and Startup][installation-and-startup] and [Advanced Secrets][advanced-secrets].
@@ -160,7 +160,7 @@ You can remove one of the attack vectors by using a locked Docker Swarm instance
 using Docker Secrets, and telling IBeam to read the secrets from the container's in-memory `/run` filesystem.
 This configuration allows the credentials to be encrypted when at rest.
 But the credentials are still accessible in plaintext via the running container, so if a security issue arises where an
-exploit exists for the port 5000 API, or if your host is compromised and an attacker can access your running container,
+exploit exists for the port 8080 API, or if your host is compromised and an attacker can access your running container,
 then the secret could be exposed. See [Advanced Secrets][advanced-secrets] for more information.
 
 ## Roadmap

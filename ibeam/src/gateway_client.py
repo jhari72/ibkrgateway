@@ -189,7 +189,7 @@ class GatewayClient():
         if not processes:
             _LOGGER.info('Gateway not found, starting new one...')
             _LOGGER.info(
-                'Note that the Gateway log below may display "Open https://localhost:5000 to login" - ignore this command.')
+                'Note that the Gateway log below may display "Open https://localhost:8080 to login" - ignore this command.')
 
             start_gateway(self.gateway_dir)
 

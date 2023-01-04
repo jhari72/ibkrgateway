@@ -1,7 +1,7 @@
     ip2loc: "off"
     proxyRemoteSsl: true
     proxyRemoteHost: "https://ndcdyn.interactivebrokers.com"
-    listenPort: 5000
+    listenPort: 8080
     listenSsl: true
     svcEnvironment: "beta"
     sslCert: "vertx.jks"
