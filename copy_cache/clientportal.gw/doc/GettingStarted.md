@@ -27,11 +27,11 @@ To start the gateway you need to open a command prompt or bash on the directory 
 Once in that directory you can run *"bin\run.sh root/conf.yaml"* or *"bin\run.bat root\conf.yaml"*
 
 Once the gateway is running, you should see the following entry in the console:
-"Server listening on port 5000" 
-By default the gateway runs in SSL mode and port 5000. 
+"Server listening on port 8080" 
+By default the gateway runs in SSL mode and port 8080. 
 
 Now that the gateway is running, you are ready to authenticate, to do that open your browser and go to:
-[https://localhost:5000/](https://localhost:5000/)
+[https://localhost:8080/](https://localhost:8080/)
 
 In this page you should see our regular login page which is also visible here:
 [https://gdcdyn.interactivebrokers.com/sso/Login?forwardTo=22](https://gdcdyn.interactivebrokers.com/sso/Login?forwardTo=22)
